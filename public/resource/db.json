@@ -1,0 +1,41 @@
+{
+  "tokens": [
+    {
+      "cg_id": "",
+      "logo": "",
+      "symbol": "ACA",
+      "name": "Acala",
+      "price": 0,
+      "atl": 0,
+      "ath": 0,
+      "type": "DeFi",
+      "plo": 0,
+      "details": {
+        "homepage": "https://acala.network/",
+        "desc": "Acala description",
+        "links": ["https://link1", "https://link2"],
+        "tags": [1, 2]
+      }
+    },
+    {
+      "cg_id": "polkadot",
+      "type": "Relay, Layer 1",
+      "plo": 0,
+      "details": {
+        "desc": "Polkadot description",
+        "links": ["https://linkA", "https://linkB"],
+        "tags": [0]
+      }
+    },
+    {
+      "cg_id": "pha",
+      "type": "Smart contract",
+      "plo": 0,
+      "details": {
+        "desc": "Phala description",
+        "links": ["https://linkA", "https://linkB"],
+        "tags": [0]
+      }
+    }
+  ]
+}
