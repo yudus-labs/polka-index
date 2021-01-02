@@ -11,6 +11,7 @@
       "type": "DeFi",
       "plo": 0,
       "details": {
+        "homepage": "",
         "cap": 0,
         "diluted_cap": 0,
         "supply": 0,
@@ -32,6 +33,29 @@
       "type": "Relay",
       "plo": 0,
       "details": {
+        "homepage": "",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "Dot description",
+        "links": ["https://linkA", "https://linkB"],
+        "tags": [0]
+      }
+    },
+    {
+      "cg_id": "pha",
+      "logo": "",
+      "symbol": "",
+      "name": "",
+      "price": 0,
+      "atl": 0,
+      "ath": 0,
+      "type": "Relay",
+      "plo": 0,
+      "details": {
+        "homepage": "",
         "cap": 0,
         "diluted_cap": 0,
         "supply": 0,
