@@ -1,10 +1,10 @@
 {
   "tokens": [
     {
-      "coingecko": "",
-      "logo": "path/to/logo",
-      "symbol": "ACA",
-      "name": "Acala",
+      "cg_id": "",
+      "logo": "",
+      "symbol": "",
+      "name": "",
       "price": 0,
       "atl": 0,
       "ath": 0,
@@ -21,10 +21,10 @@
       }
     },
     {
-      "coingecko": "polkadot",
-      "logo": "path/to/logo",
-      "symbol": "DOT",
-      "name": "Polkadot",
+      "cg_id": "polkadot",
+      "logo": "",
+      "symbol": "",
+      "name": "",
       "price": 0,
       "atl": 0,
       "ath": 0,
