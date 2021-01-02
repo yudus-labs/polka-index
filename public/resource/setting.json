@@ -1,11 +1,15 @@
 {
   "tag_map": {
-    "0": "Layer 1",
-    "1": "DeFi",
-    "2": "DEX",
-    "3": "AMM",
-    "4": "IoT",
-    "5": "Others"
+    "layer_1": "Layer 1",
+    "relayer": "Relayer",
+    "defi": "DeFi",
+    "dex": "DEX",
+    "amm": "AMM",
+    "dapps": "Dapps",
+    "smart_contract": "Smart Contract",
+    "nft": "NFT",
+    "iot": "IoT",
+    "others": "Others"
   },
   "db_template": {
     "cg_id": "",
@@ -13,10 +17,12 @@
     "symbol": "",
     "name": "",
     "price": 0,
+    "price_change_24h": 0,
     "atl": 0,
     "ath": 0,
     "type": "",
     "plo": 0,
+    "tags": [],
     "details": {
       "homepage": "",
       "cap": 0,
@@ -25,9 +31,7 @@
       "total_supply": 0,
       "max_supply": 0,
       "desc": "",
-      "links": [],
-      "tags": []
+      "links": []
     }
-  },
-  "mode": 0
+  }
 }

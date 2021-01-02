@@ -6,35 +6,38 @@
       "symbol": "ACA",
       "name": "Acala",
       "price": 0,
+      "price_change_24h": 0,
       "atl": 0,
       "ath": 0,
-      "type": "DeFi",
       "plo": 0,
+      "tags": ["defi", "dex"],
       "details": {
         "homepage": "https://acala.network/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
         "desc": "Acala description",
-        "links": ["https://link1", "https://link2"],
-        "tags": [1, 2]
+        "links": ["https://link1", "https://link2"]
       }
     },
     {
       "cg_id": "polkadot",
-      "type": "Relay, Layer 1",
       "plo": 0,
+      "tags": ["layer_1", "relayer"],
       "details": {
         "desc": "Polkadot description",
-        "links": ["https://linkA", "https://linkB"],
-        "tags": [0]
+        "links": ["https://linkA", "https://linkB"]
       }
     },
     {
       "cg_id": "pha",
-      "type": "Smart contract",
       "plo": 0,
+      "tags": ["dapps", "smart_contract"],
       "details": {
         "desc": "Phala description",
-        "links": ["https://linkA", "https://linkB"],
-        "tags": [0]
+        "links": ["https://linkA", "https://linkB"]
       }
     }
   ]

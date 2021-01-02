@@ -1,9 +1,16 @@
-const DB_URL =
-  "https://raw.githubusercontent.com/yudus-labs/polka-index/main/resource/db.json";
-const SETTING_URL =
-  "https://raw.githubusercontent.com/yudus-labs/polka-index/main/resource/setting.json";
+const LOCAL_DEV = true;
 
-export async function fetchData(URL) {
+const LOCAL_DB_URL = "./resource/db.json";
+const DB_URL =
+  "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/db.json";
+
+const LOCAL_SETTING_URL = "./resource/setting.json";
+const SETTING_URL =
+  "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/setting.json";
+
+  const CG_COINS_URL = "https://api.coingecko.com/api/v3/coins";
+
+async function _fetch(URL) {
   const response = await fetch(URL, {
     method: "GET", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
@@ -21,10 +28,15 @@ export async function fetchData(URL) {
   return response.text(); // parses JSON response into native JavaScript objects
 }
 
-export async function getDB(params) {
-  return await fetchData(DB_URL);
+export async function fetchDB(params) {
+  return await _fetch(LOCAL_DEV ? LOCAL_DB_URL : DB_URL);
 }
 
-export async function getSetting(params) {
-  return await fetchData(SETTING_URL);
+export async function fetchSetting(params) {
+  return await _fetch(LOCAL_DEV ? LOCAL_SETTING_URL : SETTING_URL);
+}
+
+export async function fetchCoinInfo(coinId) {
+  const url = `${CG_COINS_URL}/${coinId}/?tickers=false&&community_data=false&&developer_data=false&&localization=false`;
+  return await _fetch(url);
 }
