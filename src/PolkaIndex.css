@@ -1,0 +1,6 @@
+@import "./common/css/common.css";
+
+.polka-index {
+  background-color: var(--primary-bg-white);
+  max-width: 720px;
+}

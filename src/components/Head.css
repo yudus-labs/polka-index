@@ -1,0 +1,28 @@
+@import "../common/css/common.css";
+
+.head-section {
+  background-color: var(--primary-bg-light);
+}
+
+.head-section-title {
+  font-family: "Comfortaa";
+  font-size: 35px;
+  color: var(--secondary-cool-3);
+  text-align: center;
+  margin-top: 20px;
+}
+.head-section-line {
+  text-align: center;
+  height: 5px;
+  max-width: 200px;
+  background-color: var(--primary-bg-dark);
+}
+.head-section-about {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 15px;
+  color: var(--primary-main-3);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

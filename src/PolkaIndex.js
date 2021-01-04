@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { fetchDB, fetchSetting, fetchCoinInfo } from "./common/API";
 
+import HeadSection from "./components/Head";
+import TagSection from "./components/Tag";
+import TokenSection from "./components/Token";
+
 import "./PolkaIndex.css";
 
 function fetchTokens(tokens) {
@@ -57,7 +61,13 @@ function PolkaIndex() {
     fetchData(state, setState);
   }, []);
 
-  return <div className="container polka-index">Polka Index</div>;
+  return (
+    <div className="container polka-index">
+      <HeadSection />
+      <TagSection />
+      <TokenSection />
+    </div>
+  );
 }
 
 export default PolkaIndex;
