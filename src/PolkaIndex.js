@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { fetchDB, fetchSetting, fetchCoinInfo } from "./common/API";
 
 import HeadSection from "./components/Head";
-import TagSection from "./components/Tag";
+import FilterSection from "./components/Filter";
 import TokenSection from "./components/Token";
 
 import "./PolkaIndex.css";
@@ -33,13 +33,29 @@ function fetchTokens(tokens) {
   });
 }
 
+/**
+ * Fetch setting and tokens DB from external JSON source
+ * @param {Object} state
+ * @param {Function} setState
+ */
 function fetchData(state, setState) {
+  // Fetch setting first
   fetchSetting().then((data) => {
     const setting = JSON.parse(data);
     // console.log(setting.tag_map);
-    setState((s) => ({ tokens: s.tokens, tagMap: setting.tag_map }));
+    setState((s) => {
+      let filter = s.filter;
+      filter.curTags = Object.keys(setting.tag_map);
+
+      return {
+        tokens: s.tokens,
+        tagMap: setting.tag_map,
+        filter: filter,
+      };
+    });
   });
 
+  // Then fetch tokens DB
   fetchDB().then((data) => {
     const db = JSON.parse(data);
     let tokens = db.tokens;
@@ -47,15 +63,23 @@ function fetchData(state, setState) {
 
     fetchTokens(tokens);
 
-    setState((s) => ({ tokens: tokens, tagMap: s.tagMap }));
+    setState((s) => ({ tokens: tokens, tagMap: s.tagMap, filter: s.filter }));
   });
 }
 
 function PolkaIndex() {
   const [state, setState] = useState({
-    tokens: "Fetching tokens...",
-    tagMap: "Fetching tag map...",
+    tokens: [],
+    tagMap: {},
+    filter: {
+      curTags: [],
+      listed: true,
+    },
   });
+
+  const updateFilter = (filter) => {
+    setState((s) => ({ tokens: s.tokens, tagMap: s.tagMap, filter: filter }));
+  };
 
   useEffect(() => {
     fetchData(state, setState);
@@ -64,8 +88,16 @@ function PolkaIndex() {
   return (
     <div className="container polka-index">
       <HeadSection />
-      <TagSection />
-      <TokenSection />
+      <FilterSection
+        filter={state.filter}
+        updateFilter={updateFilter}
+        tagMap={state.tagMap}
+      />
+      <TokenSection
+        tokens={state.tokens}
+        filter={state.filter}
+        tagMap={state.tagMap}
+      />
     </div>
   );
 }

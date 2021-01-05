@@ -1,0 +1,93 @@
+@import "../common/css/common.css";
+
+.filter-section {
+  padding: 15px !important;
+}
+
+/* Tag buttons */
+
+.tag-btn-on {
+  color: var(--primary-main-text);
+  background: var(--primary-main-1);
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+.tag-btn-on:active,
+.tag-btn-on:hover,
+.tag-btn-on:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--primary-main-2) !important;
+  border: none !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.tag-btn-off {
+  color: var(--primary-main-text);
+  background: var(--primary-bg-dark);
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+.tag-btn-off:active,
+.tag-btn-off:hover,
+.tag-btn-off:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--primary-bg-text) !important;
+  border: none !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+/* On Exchange button */
+
+.listed-btn-on {
+  color: var(--primary-main-text);
+  background: var(--secondary-cool-2);
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+.listed-btn-on:active,
+.listed-btn-on:hover,
+.listed-btn-on:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--secondary-cool-3) !important;
+  border: none !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.listed-btn-off {
+  color: var(--primary-main-text);
+  background: var(--primary-bg-dark);
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}
+.listed-btn-off:active,
+.listed-btn-off:hover,
+.listed-btn-off:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--primary-bg-text) !important;
+  border: none !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  height: 30px;
+  font-size: 15px;
+  margin: 5px;
+}

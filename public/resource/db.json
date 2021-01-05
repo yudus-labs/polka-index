@@ -11,6 +11,7 @@
       "ath": 0,
       "plo": 0,
       "tags": ["defi", "dex"],
+      "w3f": true,
       "details": {
         "homepage": "https://acala.network/",
         "cap": 0,
@@ -26,6 +27,7 @@
       "cg_id": "polkadot",
       "plo": 0,
       "tags": ["layer_1", "relayer"],
+      "w3f": false,
       "details": {
         "desc": "Polkadot description",
         "links": ["https://linkA", "https://linkB"]
@@ -35,6 +37,7 @@
       "cg_id": "pha",
       "plo": 0,
       "tags": ["dapps", "smart_contract"],
+      "w3f": true,
       "details": {
         "desc": "Phala description",
         "links": ["https://linkA", "https://linkB"]
