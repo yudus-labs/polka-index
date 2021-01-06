@@ -8,11 +8,15 @@ import TokenSection from "./components/Token";
 
 import "./PolkaIndex.css";
 
-function fetchTokens(tokens) {
-  tokens.forEach((t) => {
-    if (t.cg_id) {
-      fetchCoinInfo(t.cg_id).then((data) => {
+function fetchTokens(tokens, setState) {
+  const new_tokens = tokens.filter((t) => !t.cg_id);
+
+  tokens.forEach((token) => {
+    if (token.cg_id) {
+      fetchCoinInfo(token.cg_id).then((data) => {
         const coinInfo = JSON.parse(data);
+        const t = JSON.parse(JSON.stringify(token));
+
         // console.log(coinInfo);
         t.logo = coinInfo.image.small;
         t.symbol = coinInfo.symbol;
@@ -28,13 +32,26 @@ function fetchTokens(tokens) {
         t.details.supply = coinInfo.market_data.circulating_supply;
         t.details.total_supply = coinInfo.market_data.total_supply;
         t.details.max_supply = coinInfo.market_data.max_supply;
+
+        new_tokens.push(t);
+
+        new_tokens.sort((a, b) => {
+          return parseInt(b.details.cap) - parseInt(a.details.cap);
+        });
+
+        setState((s) => ({
+          tokens: new_tokens,
+          tagMap: s.tagMap,
+          filter: s.filter,
+        }));
       });
     }
   });
 }
 
 /**
- * Fetch setting and tokens DB from external JSON source
+ * Fetch setting and tokens DB from external JSON source, 
+ * then fetch real market data from CoinGecko
  * @param {Object} state
  * @param {Function} setState
  */
@@ -58,12 +75,9 @@ function fetchData(state, setState) {
   // Then fetch tokens DB
   fetchDB().then((data) => {
     const db = JSON.parse(data);
-    let tokens = db.tokens;
-    // console.log(tokens);
 
-    fetchTokens(tokens);
-
-    setState((s) => ({ tokens: tokens, tagMap: s.tagMap, filter: s.filter }));
+    // And fetch market data
+    fetchTokens(db.tokens, setState);
   });
 }
 

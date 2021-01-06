@@ -1,5 +1,14 @@
 @import "../common/css/common.css";
 
 .token-section {
-    padding: 15px !important;
+  padding: 15px !important;
+}
+
+.token-item-main {
+  height: 110px;
+  background: var(--primary-bg-light);
+}
+
+.token-item-details {
+  background: var(--primary-bg-1);
 }

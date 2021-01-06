@@ -24,6 +24,29 @@
       }
     },
     {
+      "cg_id": "",
+      "logo": "",
+      "symbol": "PLM",
+      "name": "Plasm",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["smart_contract", "dapps"],
+      "w3f": true,
+      "details": {
+        "homepage": "https://plasm.io/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "Plasm description",
+        "links": ["https://link1", "https://link2"]
+      }
+    },
+    {
       "cg_id": "polkadot",
       "plo": 0,
       "tags": ["layer_1", "relayer"],
@@ -40,6 +63,16 @@
       "w3f": true,
       "details": {
         "desc": "Phala description",
+        "links": ["https://linkA", "https://linkB"]
+      }
+    },
+    {
+      "cg_id": "sora",
+      "plo": 0,
+      "tags": ["defi", "dex", "amm"],
+      "w3f": true,
+      "details": {
+        "desc": "Sora description",
         "links": ["https://linkA", "https://linkB"]
       }
     }
