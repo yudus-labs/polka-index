@@ -12,6 +12,7 @@
       "plo": 0,
       "tags": ["defi", "dex"],
       "w3f": true,
+      "rank": 0,
       "details": {
         "homepage": "https://acala.network/",
         "cap": 0,
@@ -35,6 +36,7 @@
       "plo": 0,
       "tags": ["smart_contract", "dapps"],
       "w3f": true,
+      "rank": 0,
       "details": {
         "homepage": "https://plasm.io/",
         "cap": 0,
