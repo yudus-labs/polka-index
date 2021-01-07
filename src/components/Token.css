@@ -4,10 +4,158 @@
   padding: 15px !important;
 }
 
-.token-item-main {
-  height: 110px;
-  background: var(--primary-bg-light);
+.token-item {
+  margin: 0 0 15px 0;
 }
+
+/* ######################################################################### */
+/* TokenItemMain and its child components */
+
+.token-item-main {
+  min-height: 120px;
+  background: var(--primary-bg-light);
+  border: var(--primary-bg-2);
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+}
+
+.token-item-main-grp {
+  margin: 5px;
+}
+
+/* ########################################## */
+/* MainGrpA */
+
+.main-grp-logo {
+  background: var(--primary-bg-2);
+  height: 40px;
+  width: 40px;
+}
+
+.main-grp-price {
+  height: 40px;
+  color: var(--primary-main-2);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 25px;
+}
+
+.main-grp-price-change-up {
+  padding-top: 10px;
+  height: 40px;
+  color: var(--secondary-cool-3);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 14px;
+}
+.main-grp-price-change-down {
+  padding-top: 10px;
+  height: 40px;
+  color: var(--secondary-hot-3);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 14px;
+}
+
+.main-grp-name {
+  height: 40px;
+  color: var(--primary-main-3);
+  font-family: "Montserrat";
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+/* ########################################## */
+/* MainGrpB */
+
+.main-grp-cap {
+  height: 40px;
+  color: var(--primary-main-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.main-grp-cap-number {
+  font-weight: bold;
+}
+.main-grp-cap-label {
+}
+
+.main-grp-all-time {
+  height: 40px;
+  color: var(--primary-main-2);
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+.main-grp-since-atl {
+}
+.main-grp-since-atl-number {
+  color: var(--secondary-cool-3);
+}
+.main-grp-since-ath {
+}
+.main-grp-since-ath-number {
+  color: var(--secondary-hot-3);
+}
+
+/* ########################################## */
+/* MainGrpC */
+
+.main-grp-tags {
+}
+.main-grp-tag-item {
+  color: var(--primary-bg-dark-text);
+  background: var(--primary-main-1);
+  height: 25px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 3px;
+}
+
+/* ########################################## */
+/* MainGrpD */
+
+.main-grp-w3f {
+  height: 28px;
+  min-width: 100px;
+  font-family: "Montserrat";
+  background: white;
+  color: black;
+  border: var(--primary-bg-text);
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.main-grp-detail-btn {
+  color: var(--secondary-cool-3);
+  background: var(--secondary-cool-1);
+  border: none;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.main-grp-detail-btn:active,
+.main-grp-detail-btn:hover,
+.main-grp-detail-btn:focus {
+  color: var(--secondary-cool-3) !important;
+  background: var(--secondary-cool-2) !important;
+  border: none !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* ######################################################################### */
+/* TokenItemDetails and its child components */
 
 .token-item-details {
   background: var(--primary-bg-1);

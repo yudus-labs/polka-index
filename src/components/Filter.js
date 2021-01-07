@@ -73,28 +73,26 @@ export default function FilterSection(props) {
 
   return (
     <div className="container-fluid filter-section">
-      <div className="container filter-section">
-        <div className="row justify-content-between">
-          {/* Tag Items */}
-          <div className="col-9">
-            <div className="row">
-              {Object.keys(props.tagMap).map((tagValue) => (
-                <TagBtn
-                  tagValue={tagValue}
-                  toggleTag={toggleTag}
-                  filter={props.filter}
-                  tagMap={props.tagMap}
-                  key={tagValue}
-                />
-              ))}
-            </div>
+      <div className="row justify-content-between" style={{ margin: 0 }}>
+        {/* Tag Items */}
+        <div className="col-9">
+          <div className="row">
+            {Object.keys(props.tagMap).map((tagValue) => (
+              <TagBtn
+                tagValue={tagValue}
+                toggleTag={toggleTag}
+                filter={props.filter}
+                tagMap={props.tagMap}
+                key={tagValue}
+              />
+            ))}
           </div>
+        </div>
 
-          {/* On Exchange toggle */}
-          <div className="col-3">
-            <div className="row justify-content-end">
-              <ListedBtn toggleListed={toggleListed} filter={props.filter} />
-            </div>
+        {/* On Exchange toggle */}
+        <div className="col-3">
+          <div className="row justify-content-end">
+            <ListedBtn toggleListed={toggleListed} filter={props.filter} />
           </div>
         </div>
       </div>

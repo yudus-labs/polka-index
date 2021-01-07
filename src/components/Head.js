@@ -11,7 +11,7 @@ export default function HeadSection() {
           <div className="col head-section-title">Polka Index</div>
         </div>
         <div className="row justify-content-center">
-          <div className="col head-section-line" />
+          <div className="col head-section-line">••••••• ••••••• •••••••</div>
         </div>
         <div className="row justify-content-center">
           <div className="col head-section-about">

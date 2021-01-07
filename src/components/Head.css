@@ -10,12 +10,14 @@
   color: var(--secondary-cool-3);
   text-align: center;
   margin-top: 20px;
+  margin-bottom: -20px;
 }
 .head-section-line {
   text-align: center;
-  height: 5px;
-  max-width: 200px;
-  background-color: var(--primary-bg-dark);
+  height: 25px;
+  /* max-width: 200px; */
+  font-size: 30px;
+  /* background-color: var(--primary-bg-dark); */
 }
 .head-section-about {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
