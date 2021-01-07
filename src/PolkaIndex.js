@@ -25,6 +25,7 @@ function fetchTokens(tokens, setState) {
         t.price_change_24h = coinInfo.market_data.price_change_percentage_24h;
         t.atl = coinInfo.market_data.atl.usd;
         t.ath = coinInfo.market_data.ath.usd;
+        t.rank = coinInfo.market_data.market_cap_rank;
         t.details.homepage = coinInfo.links.homepage[0];
         t.details.cap = coinInfo.market_data.market_cap.usd;
         t.details.diluted_cap =

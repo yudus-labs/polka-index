@@ -34,6 +34,7 @@
 }
 
 .main-grp-price {
+  padding-top: 10px;
   height: 40px;
   color: var(--primary-main-2);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -42,7 +43,7 @@
 }
 
 .main-grp-price-change-up {
-  padding-top: 10px;
+  padding-top: 20px;
   height: 40px;
   color: var(--secondary-cool-3);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -50,7 +51,7 @@
   font-size: 14px;
 }
 .main-grp-price-change-down {
-  padding-top: 10px;
+  padding-top: 20px;
   height: 40px;
   color: var(--secondary-hot-3);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -58,7 +59,8 @@
   font-size: 14px;
 }
 
-.main-grp-name {
+.main-grp-name,
+.main-grp-symbol {
   height: 40px;
   color: var(--primary-main-3);
   font-family: "Montserrat";
@@ -70,17 +72,20 @@
 /* ########################################## */
 /* MainGrpB */
 
-.main-grp-cap {
+.main-grp-cap,
+.main-grp-rank {
   height: 40px;
   color: var(--primary-main-2);
   font-family: "Montserrat";
   font-size: 14px;
   margin-bottom: 10px;
 }
-.main-grp-cap-number {
+.main-grp-cap-number,
+.main-grp-rank-number {
   font-weight: bold;
 }
-.main-grp-cap-label {
+.main-grp-cap-label,
+.main-grp-rank-label {
 }
 
 .main-grp-all-time {
@@ -114,6 +119,7 @@
   text-align: center;
   margin-bottom: 5px;
   padding-top: 3px;
+  max-width: 125px;
 }
 
 /* ########################################## */
@@ -122,6 +128,7 @@
 .main-grp-w3f {
   height: 28px;
   min-width: 100px;
+  max-width: 125px;
   font-family: "Montserrat";
   background: white;
   color: black;
@@ -130,15 +137,15 @@
   border-width: 1px;
   text-align: center;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .main-grp-detail-btn {
   color: var(--secondary-cool-3);
   background: var(--secondary-cool-1);
   border: none;
-  height: 50px;
-  font-size: 18px;
+  height: 60px;
+  font-size: 17px;
   margin-top: 15px;
 }
 .main-grp-detail-btn:active,
@@ -149,8 +156,8 @@
   border: none !important;
   border-style: none !important;
   box-shadow: none !important;
-  height: 50px;
-  font-size: 18px;
+  height: 60px;
+  font-size: 17px;
   margin-top: 15px;
 }
 
@@ -159,4 +166,9 @@
 
 .token-item-details {
   background: var(--primary-bg-1);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 15px;
+  color: var(--primary-main-3);
+  padding: 10px;
 }

@@ -7,11 +7,75 @@ import "./Token.css";
 // TokenItemDetails
 
 function TokenItemDetails(props) {
+  const cap = props.details.cap ? props.details.cap.toLocaleString() : "N/A";
+  const dilutedCap = props.details.diluted_cap
+    ? props.details.diluted_cap.toLocaleString()
+    : "N/A";
+  const supply = props.details.supply
+    ? parseFloat(props.details.supply.toFixed()).toLocaleString()
+    : "N/A";
+  const totalSupply = props.details.total_supply
+    ? parseFloat(props.details.total_supply.toFixed()).toLocaleString()
+    : "N/A";
+  const maxSupply = props.details.max_supply
+    ? parseFloat(props.details.max_supply.toFixed()).toLocaleString()
+    : "N/A";
+
+  if (props.details.supply && props.details.total_supply) {
+    var supplyCompare = ` ( ${(
+      (props.details.supply / props.details.total_supply) *
+      100
+    ).toFixed(2)}% of total supply )`;
+  } else {
+    supplyCompare = "";
+  }
+
   return props.detailsOn ? (
     <div className="token-item-details">
       <div className="row">
         <div className="col">
-          <b>Market cap : {props.details.cap}</b>
+          <b>
+            Market cap : {cap}
+            <br />
+            Fully diluted cap : {dilutedCap}
+            <br />
+            <br />
+            Circulating supply : {supply}
+            {supplyCompare}
+            <br />
+            Total supply : {totalSupply}
+            <br />
+            Max supply : {maxSupply}
+          </b>
+          <br />
+          <br />
+          <b>Homepage</b> :{" "}
+          {props.details.homepage ? (
+            <a href={props.details.homepage} className="custom-link">
+              {props.details.homepage}
+            </a>
+          ) : (
+            "N/A"
+          )}
+          <br />
+          <br />
+          <b>Description</b>
+          <br />
+          <br />
+          {props.details.desc ? props.details.desc : "N/A"}
+          <br />
+          <br />
+          <b>Useful links</b>
+          <br />
+          <br />
+          {props.details.links.map((link, i) => (
+            <div key={i}>
+              {" "}
+              <a href={link} className="custom-link">
+                {link}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -31,7 +95,7 @@ function MainGrpA(props) {
   function Logo() {
     return (
       <div className="main-grp-logo">
-        <img src={props.token.logo} width="40" height="40" />
+        <img src={props.token.logo} alt="" width="40" height="40" />
       </div>
     );
   }
@@ -56,10 +120,11 @@ function MainGrpA(props) {
     );
   }
   function Name() {
+    return <div className="main-grp-name">{props.token.name}</div>;
+  }
+  function Symbol() {
     return (
-      <div className="main-grp-name">
-        {props.token.symbol.toUpperCase() + " •• " + props.token.name}
-      </div>
+      <div className="main-grp-symbol">{props.token.symbol.toUpperCase()}</div>
     );
   }
 
@@ -69,16 +134,20 @@ function MainGrpA(props) {
         <div className="col-3">
           <Logo />
         </div>
+        <div className="col">
+          <Name />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-auto">
+          <Symbol />
+        </div>
         <div className="col-auto">
           <Price />
         </div>
         <div className="col-2">
           <PriceChange />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Name />
         </div>
       </div>
     </div>
@@ -101,6 +170,14 @@ function MainGrpB(props) {
       <div className="main-grp-cap">
         <div className="main-grp-cap-number">$ {niceCap}</div>
         <div className="main-grp-cap-label">Market Cap</div>
+      </div>
+    );
+  }
+  function Rank() {
+    return (
+      <div className="main-grp-rank">
+        <div className="main-grp-rank-number"># {props.token.rank}</div>
+        <div className="main-grp-rank-label">Rank</div>
       </div>
     );
   }
@@ -127,12 +204,15 @@ function MainGrpB(props) {
   return (
     <div className="token-item-main-grp" style={{ marginLeft: "0px" }}>
       <div className="row">
-        <div className="col">
+        <div className="col-auto">
           <Cap />
+        </div>
+        <div className="col-auto">
+          <Rank />
         </div>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col-auto">
           <AllTime />
         </div>
       </div>
@@ -154,7 +234,7 @@ function MainGrpC(props) {
     );
   }
   return (
-    <div className="token-item-main-grp" style={{ marginLeft: "-30px" }}>
+    <div className="token-item-main-grp" style={{ marginLeft: "0px" }}>
       <div className="row">
         <div className="col">
           <Tags />
@@ -185,7 +265,7 @@ function MainGrpD(props) {
   }
 
   return (
-    <div className="token-item-main-grp" style={{ marginLeft: "-20px" }}>
+    <div className="token-item-main-grp" style={{ marginLeft: "0px" }}>
       <div className="row">
         <div className="col">
           <W3F />
@@ -204,16 +284,16 @@ function TokenItemMain(props) {
   return (
     <div className="token-item-main">
       <div className="row">
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-4">
           <MainGrpA token={props.token} />
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-4 col-sm-4">
           <MainGrpB token={props.token} />
         </div>
-        <div className="col-2">
+        <div className="col-lg-2 col-md-2 col-sm-4">
           <MainGrpC token={props.token} tagMap={props.tagMap} />
         </div>
-        <div className="col-2">
+        <div className="col-lg-2 col-md-2 col-sm-4">
           <MainGrpD
             token={props.token}
             toggleDetails={props.toggleDetails}
