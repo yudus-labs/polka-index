@@ -16,9 +16,15 @@ export default function HeadSection() {
         <div className="row justify-content-center">
           <div className="col head-section-about">
             For Polkadot Warriors - v0.1.0
-            <br />© 2021 Yudus Labs
+            <br />© 2021{" "}
+            <a href="https://yudus.dev" className="custom-link">
+              Yudus Labs
+            </a>
             <br />
-            Data provided by CoinGecko
+            Market data by{" "}
+            <a href="https://coingecko.com" className="custom-link">
+              CoinGecko
+            </a>
           </div>
         </div>
       </div>
