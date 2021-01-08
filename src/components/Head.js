@@ -15,15 +15,15 @@ export default function HeadSection() {
         </div>
         <div className="row justify-content-center">
           <div className="col head-section-about">
-            For Polkadot Warriors - v0.1.0
-            <br />© 2021{" "}
+            <br />© 2021 •{" "}
             <a href="https://yudus.dev" className="custom-link">
-              Yudus Labs
-            </a>
+              <b>Yudus Labs</b>
+            </a>{" "}
+            • v0.1.0
             <br />
             Market data by{" "}
             <a href="https://coingecko.com" className="custom-link">
-              CoinGecko
+              <b>CoinGecko</b>
             </a>
           </div>
         </div>

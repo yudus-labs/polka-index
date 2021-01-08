@@ -13,18 +13,19 @@
   height: 30px;
   font-size: 15px;
   margin: 5px;
+  box-shadow: 1px 1px 2px var(--primary-main-3);
 }
 .tag-btn-on:active,
 .tag-btn-on:hover,
 .tag-btn-on:focus {
   color: var(--primary-main-text) !important;
-  background: var(--primary-main-2) !important;
+  background: var(--primary-light) !important;
   border: none !important;
   border-style: none !important;
-  box-shadow: none !important;
   height: 30px;
   font-size: 15px;
   margin: 5px;
+  box-shadow: 1px 1px 2px var(--primary-main-3);
 }
 
 .tag-btn-off {
@@ -39,7 +40,7 @@
 .tag-btn-off:hover,
 .tag-btn-off:focus {
   color: var(--primary-main-text) !important;
-  background: var(--primary-bg-text) !important;
+  background: var(--primary-bg-2) !important;
   border: none !important;
   border-style: none !important;
   box-shadow: none !important;
@@ -52,23 +53,24 @@
 
 .listed-btn-on {
   color: var(--primary-main-text);
-  background: var(--secondary-cool-2);
+  background: var(--secondary-cool-3);
   border: none;
   /* height: 30px; */
   font-size: 15px;
   margin: 5px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
 }
 .listed-btn-on:active,
 .listed-btn-on:hover,
 .listed-btn-on:focus {
   color: var(--primary-main-text) !important;
-  background: var(--secondary-cool-3) !important;
+  background: var(--secondary-cool-2) !important;
   border: none !important;
   border-style: none !important;
-  box-shadow: none !important;
   /* height: 30px; */
   font-size: 15px;
   margin: 5px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
 }
 
 .listed-btn-off {
@@ -83,7 +85,7 @@
 .listed-btn-off:hover,
 .listed-btn-off:focus {
   color: var(--primary-main-text) !important;
-  background: var(--primary-bg-text) !important;
+  background: var(--primary-bg-2) !important;
   border: none !important;
   border-style: none !important;
   box-shadow: none !important;

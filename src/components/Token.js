@@ -34,7 +34,7 @@ function TokenItemDetails(props) {
     <div className="token-item-details">
       <div className="row">
         <div className="col">
-          <b>
+          <b className="token-item-details-emphasis">
             Market cap : {cap}
             <br />
             Fully diluted cap : {dilutedCap}
@@ -49,7 +49,7 @@ function TokenItemDetails(props) {
           </b>
           <br />
           <br />
-          <b>Homepage</b> :{" "}
+          <b className="token-item-details-emphasis">Homepage</b> :{" "}
           {props.details.homepage ? (
             <a href={props.details.homepage} className="custom-link">
               {props.details.homepage}
@@ -59,13 +59,13 @@ function TokenItemDetails(props) {
           )}
           <br />
           <br />
-          <b>Description</b>
+          <b className="token-item-details-emphasis">Description</b>
           <br />
           <br />
           {props.details.desc ? props.details.desc : "N/A"}
           <br />
           <br />
-          <b>Useful links</b>
+          <b className="token-item-details-emphasis">Useful links</b>
           <br />
           <br />
           {props.details.links.map((link, i) => (
@@ -113,7 +113,7 @@ function MainGrpA(props) {
         className={
           delta >= 0 ? "main-grp-price-change-up" : "main-grp-price-change-down"
         }
-        style={{ marginLeft: "-15px" }}
+        style={{ marginLeft: "0px" }}
       >
         <b>{delta.toFixed(2)}</b>%
       </div>
@@ -131,10 +131,10 @@ function MainGrpA(props) {
   return (
     <div className="token-item-main-grp">
       <div className="row">
-        <div className="col-3">
+        <div className="col-auto pr-0">
           <Logo />
         </div>
-        <div className="col">
+        <div className="col-auto">
           <Name />
         </div>
       </div>
@@ -143,7 +143,7 @@ function MainGrpA(props) {
         <div className="col-auto">
           <Symbol />
         </div>
-        <div className="col-auto">
+        <div className="col-auto pr-0">
           <Price />
         </div>
         <div className="col-2">
@@ -168,7 +168,9 @@ function MainGrpB(props) {
   function Cap() {
     return (
       <div className="main-grp-cap">
-        <div className="main-grp-cap-number">$ {niceCap}</div>
+        <div className="main-grp-cap-number">
+          $ <span style={{ textShadow: "0.5px 0.5px 0.5px" }}>{niceCap}</span>
+        </div>
         <div className="main-grp-cap-label">Market Cap</div>
       </div>
     );
@@ -204,7 +206,7 @@ function MainGrpB(props) {
   return (
     <div className="token-item-main-grp" style={{ marginLeft: "0px" }}>
       <div className="row">
-        <div className="col-auto">
+        <div className="col-auto pr-0">
           <Cap />
         </div>
         <div className="col-auto">
@@ -222,12 +224,13 @@ function MainGrpB(props) {
 
 function MainGrpC(props) {
   const tags = props.token.tags;
+
   function Tags() {
     return (
-      <div className="main-grp-tags">
+      <div className="row main-grp-tags">
         {tags.map((t, i) => (
-          <div className="main-grp-tag-item" key={i}>
-            {props.tagMap[t]}
+          <div className="col-auto pr-0" key={i}>
+            <div className="main-grp-tag-item">{props.tagMap[t]}</div>
           </div>
         ))}
       </div>
@@ -254,7 +257,9 @@ function MainGrpD(props) {
     return (
       <div
         type="button"
-        className="btn btn-primary btn-block main-grp-detail-btn"
+        className={`btn btn-primary btn-block main-grp-detail-btn-${
+          props.detailsOn ? "off" : "on"
+        }`}
         onClick={(e) => {
           props.toggleDetails();
         }}
@@ -267,12 +272,10 @@ function MainGrpD(props) {
   return (
     <div className="token-item-main-grp" style={{ marginLeft: "0px" }}>
       <div className="row">
-        <div className="col">
+        <div className="col-auto pr-0">
           <W3F />
         </div>
-      </div>
-      <div className="row">
-        <div className="col">
+        <div className="col-auto ">
           <DetailBtn />
         </div>
       </div>
@@ -343,7 +346,7 @@ function TokenItem(props) {
     const tmp = props.token.tags.filter((i) =>
       props.filter.curTags.includes(i)
     );
-    if (tmp.length == 0) {
+    if (tmp.length === 0) {
       isFilteredOut = true;
     }
   } else {

@@ -36,7 +36,7 @@
 .main-grp-price {
   padding-top: 10px;
   height: 40px;
-  color: var(--primary-main-2);
+  color: var(--primary-main-3);
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   font-size: 25px;
@@ -59,13 +59,21 @@
   font-size: 14px;
 }
 
-.main-grp-name,
+.main-grp-name {
+  height: 40px;
+  color: var(--primary-main-3);
+  font-family: "Montserrat";
+  font-size: 20px;
+  padding-top: 5px;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px var(--primary-main-2);
+}
 .main-grp-symbol {
   height: 40px;
   color: var(--primary-main-3);
   font-family: "Montserrat";
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 12px;
   font-weight: 700;
 }
 
@@ -113,20 +121,21 @@
 .main-grp-tag-item {
   color: var(--primary-bg-dark-text);
   background: var(--primary-main-1);
-  height: 25px;
+  height: auto;
   font-family: "Montserrat";
   font-size: 12px;
   text-align: center;
-  margin-bottom: 5px;
-  padding-top: 3px;
-  max-width: 125px;
+  margin-bottom: 10px;
+  padding: 3px 5px 5px 3px;
+  border-radius: 3px;
+  /* max-width: 125px; */
 }
 
 /* ########################################## */
 /* MainGrpD */
 
 .main-grp-w3f {
-  height: 28px;
+  height: 35px;
   min-width: 100px;
   max-width: 125px;
   font-family: "Montserrat";
@@ -138,27 +147,47 @@
   text-align: center;
   font-weight: 900;
   font-size: 13px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding-top: 5px;
 }
 
-.main-grp-detail-btn {
+.main-grp-detail-btn-on {
   color: var(--secondary-cool-3);
   background: var(--secondary-cool-1);
   border: none;
-  height: 60px;
+  height: auto;
   font-size: 17px;
-  margin-top: 15px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
 }
-.main-grp-detail-btn:active,
-.main-grp-detail-btn:hover,
-.main-grp-detail-btn:focus {
-  color: var(--secondary-cool-3) !important;
+.main-grp-detail-btn-on:active,
+.main-grp-detail-btn-on:hover,
+.main-grp-detail-btn-on:focus {
+  color: var(--primary-main-text) !important;
   background: var(--secondary-cool-2) !important;
   border: none !important;
   border-style: none !important;
-  box-shadow: none !important;
-  height: 60px;
+  height: auto;
   font-size: 17px;
-  margin-top: 15px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
+}
+
+.main-grp-detail-btn-off {
+  color: var(--secondary-cool-3);
+  background: var(--secondary-cool-1);
+  border: none;
+  height: auto;
+  font-size: 17px;
+}
+.main-grp-detail-btn-off:active,
+.main-grp-detail-btn-off:hover,
+.main-grp-detail-btn-off:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--secondary-cool-2) !important;
+  border: none !important;
+  border-style: none !important;
+  height: auto;
+  font-size: 17px;
 }
 
 /* ######################################################################### */
@@ -166,9 +195,12 @@
 
 .token-item-details {
   background: var(--primary-bg-1);
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-  font-size: 15px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
   color: var(--primary-main-3);
   padding: 10px;
+}
+
+.token-item-details-emphasis {
+  font-size: 16px;
 }
