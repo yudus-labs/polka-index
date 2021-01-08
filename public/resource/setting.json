@@ -1,14 +1,26 @@
 {
   "tag_map": {
+    "protocol": "Protocol",
+    "platform": "Platform",
     "layer_1": "Layer 1",
     "relayer": "Relayer",
     "defi": "DeFi",
     "dex": "DEX",
     "amm": "AMM",
+    "lend": "Lending",
     "dapps": "Dapps",
     "smart_contract": "Smart Contract",
+    "wasm": "WASM",
+    "evm": "EVM",
     "nft": "NFT",
     "iot": "IoT",
+    "storage": "Storage",
+    "dao": "DAO",
+    "privacy": "Privacy",
+    "credentials": "Credentials",
+    "did": "Decentralized ID",
+    "cloud": "Cloud Service",
+    "pow": "PoW",
     "others": "Others"
   },
   "db_template": {

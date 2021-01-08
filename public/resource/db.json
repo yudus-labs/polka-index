@@ -1,6 +1,263 @@
 {
   "tokens": [
     {
+      "cg_id": "polkadot",
+      "plo": 0,
+      "tags": ["layer_1", "relayer", "protocol", "platform"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://polkadot.network/blog/",
+          "https://wiki.polkadot.network/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "kusama",
+      "plo": 0,
+      "tags": ["layer_1", "relayer", "protocol", "platform"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://kusama.network/blog/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "ocean-protocol",
+      "plo": 0,
+      "tags": ["protocol", "storage"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://oceanprotocol.com/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "edgeware",
+      "plo": 0,
+      "tags": ["smart_contract", "dapps", "wasm"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://edgewa.re/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "darwinia-network-native-token",
+      "plo": 0,
+      "tags": ["defi", "dex", "nft"],
+      "w3f": true,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://darwinia.network/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "darwinia-commitment-token",
+      "plo": 0,
+      "tags": ["defi", "dex", "nft"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://darwinia.network/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "sora",
+      "plo": 0,
+      "tags": ["defi", "dex", "amm", "protocol"],
+      "w3f": true,
+      "details": {
+        "desc": "n/a",
+        "links": [
+          "https://sora.org/"
+        ]
+      }
+    },
+
+    {
+      "cg_id": "polkastarter",
+      "plo": 0,
+      "tags": ["defi", "dex", "amm"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "chainx",
+      "plo": 0,
+      "tags": ["defi", "dex", "relayer"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "akropolis",
+      "plo": 0,
+      "tags": ["defi", "lend"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "robonomics-network",
+      "plo": 0,
+      "tags": ["iot"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "pha",
+      "plo": 0,
+      "tags": ["dapps", "smart_contract", "privacy"],
+      "w3f": true,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "mantra-dao",
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "rio-defi",
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "dock",
+      "plo": 0,
+      "tags": ["credentials", "did"],
+      "w3f": true,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "stafi",
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": true,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "kulupu",
+      "plo": 0,
+      "tags": ["layer_1", "relayer", "platform", "protocol", "smart_contract", "dapps", "pow"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "robonomics-web-services",
+      "plo": 0,
+      "tags": ["iot"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "spiderdao",
+      "plo": 0,
+      "tags": ["privacy", "dao"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "deficliq",
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "crust-network",
+      "plo": 0,
+      "tags": ["pow", "storage", "cloud"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "reef-finance",
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
       "cg_id": "",
       "logo": "",
       "symbol": "ACA",
@@ -46,36 +303,6 @@
         "max_supply": 0,
         "desc": "Plasm description",
         "links": ["https://link1", "https://link2"]
-      }
-    },
-    {
-      "cg_id": "polkadot",
-      "plo": 0,
-      "tags": ["layer_1", "relayer"],
-      "w3f": false,
-      "details": {
-        "desc": "Polkadot description",
-        "links": ["https://linkA", "https://linkB"]
-      }
-    },
-    {
-      "cg_id": "pha",
-      "plo": 0,
-      "tags": ["dapps", "smart_contract"],
-      "w3f": true,
-      "details": {
-        "desc": "Phala description",
-        "links": ["https://linkA", "https://linkB"]
-      }
-    },
-    {
-      "cg_id": "sora",
-      "plo": 0,
-      "tags": ["defi", "dex", "amm"],
-      "w3f": true,
-      "details": {
-        "desc": "Sora description",
-        "links": ["https://linkA", "https://linkB"]
       }
     }
   ]
