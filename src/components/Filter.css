@@ -55,7 +55,6 @@
   color: var(--primary-main-text);
   background: var(--secondary-cool-3);
   border: none;
-  /* height: 30px; */
   font-size: 15px;
   margin: 5px;
   box-shadow: 1px 1px 3px var(--primary-bg-dark);
@@ -67,7 +66,6 @@
   background: var(--secondary-cool-2) !important;
   border: none !important;
   border-style: none !important;
-  /* height: 30px; */
   font-size: 15px;
   margin: 5px;
   box-shadow: 1px 1px 3px var(--primary-bg-dark);
@@ -77,7 +75,6 @@
   color: var(--primary-main-text);
   background: var(--primary-bg-dark);
   border: none;
-  /* height: 30px; */
   font-size: 15px;
   margin: 5px;
 }
@@ -89,7 +86,28 @@
   border: none !important;
   border-style: none !important;
   box-shadow: none !important;
-  /* height: 30px; */
   font-size: 15px;
   margin: 5px;
+}
+
+/* Toggle all tags button */
+
+.toggle-all-tags-btn {
+  color: var(--primary-main-text);
+  background: var(--secondary-cool-2);
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
+}
+.toggle-all-tags-btn:active,
+.toggle-all-tags-btn:hover,
+.toggle-all-tags-btn:focus {
+  color: var(--secondary-cool-3) !important;
+  background: var(--secondary-cool-1) !important;
+  border: none !important;
+  border-style: none !important;
+  font-size: 15px;
+  margin: 5px;
+  box-shadow: 1px 1px 3px var(--primary-bg-dark);
 }

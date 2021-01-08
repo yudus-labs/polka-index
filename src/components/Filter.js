@@ -26,6 +26,23 @@ ListedBtn.propTypes = {
   filter: PropTypes.object,
 };
 
+function ToggleAllTagsBtn(props) {
+  return (
+    <div
+      type="button"
+      className="btn btn-primary btn-sm toggle-all-tags-btn"
+      onClick={(e) => {
+        props.toggleAllTags();
+      }}
+    >
+      Toggle all tags
+    </div>
+  );
+}
+ToggleAllTagsBtn.propTypes = {
+  toggleAllTags: PropTypes.func,
+};
+
 function TagBtn(props) {
   const isOn = () => {
     return props.filter.curTags.includes(props.tagValue);
@@ -52,6 +69,8 @@ TagBtn.propTypes = {
 };
 
 export default function FilterSection(props) {
+  const defaultTags = Object.keys(props.tagMap);
+
   const toggleTag = (tagValue) => {
     const filter = props.filter;
     if (filter.curTags.includes(tagValue)) {
@@ -71,13 +90,23 @@ export default function FilterSection(props) {
     props.updateFilter(filter);
   };
 
+  const toggleAllTags = () => {
+    const filter = props.filter;
+    if (filter.curTags.length === 0) {
+      filter.curTags = defaultTags;
+    } else {
+      filter.curTags = [];
+    }
+    props.updateFilter(filter);
+  };
+
   return (
     <div className="container-fluid filter-section">
       <div className="row justify-content-between" style={{ margin: 0 }}>
         {/* Tag Items */}
         <div className="col-9">
           <div className="row">
-            {Object.keys(props.tagMap).map((tagValue) => (
+            {defaultTags.map((tagValue) => (
               <TagBtn
                 tagValue={tagValue}
                 toggleTag={toggleTag}
@@ -93,6 +122,7 @@ export default function FilterSection(props) {
         <div className="col-3">
           <div className="row justify-content-end">
             <ListedBtn toggleListed={toggleListed} filter={props.filter} />
+            <ToggleAllTagsBtn toggleAllTags={toggleAllTags} />
           </div>
         </div>
       </div>

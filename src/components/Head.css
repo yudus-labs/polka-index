@@ -18,11 +18,18 @@
   font-size: 30px;
   /* background-color: var(--primary-bg-dark); */
 }
-.head-section-about {
+.head-section-subtitle {
   font-family: "Source Code Pro", monospace;
   font-size: 15px;
   color: var(--primary-main-3);
   text-align: center;
   margin-top: 0px;
   margin-bottom: 15px;
+}
+.head-section-about {
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+  color: var(--primary-main-3);
+  margin-top: 0px;
+  margin: 0 20px 15px 20px;
 }

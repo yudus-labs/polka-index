@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 
 import "./Token.css";
 
+const RAW_GITHUB_LOGO_DIR_URL =
+  "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/token_logos";
+
 // ############################################################################
 // TokenItemDetails
 
@@ -92,17 +95,25 @@ TokenItemDetails.propTypes = {
 // TokenItemMain
 
 function MainGrpA(props) {
+  const logo = props.token.logo.startsWith("http")
+    ? props.token.logo
+    : `${RAW_GITHUB_LOGO_DIR_URL}/${props.token.logo}.png`;
+
   function Logo() {
     return (
       <div className="main-grp-logo">
-        <img src={props.token.logo} alt="" width="40" height="40" />
+        <img src={logo} alt="" width="40" height="40" />
       </div>
     );
   }
   function Price() {
+    const price =
+      props.token.price >= 1
+        ? props.token.price.toFixed(2)
+        : props.token.price.toFixed(3);
     return (
       <div className="main-grp-price" style={{ marginLeft: "-10px" }}>
-        $<b>{props.token.price.toFixed(2)}</b>
+        $<b>{price}</b>
       </div>
     );
   }

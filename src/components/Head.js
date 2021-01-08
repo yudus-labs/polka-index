@@ -12,12 +12,8 @@ export default function HeadSection() {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col head-section-about">
-            <div style={{ fontSize: "12px" }}>
-              Track all tokens built on <b>Substrate</b> or heavily involved in{" "}
-              <b>Polkadot</b> ecosystem
-            </div>
-            <br />© 2021 •{" "}
+          <div className="col head-section-subtitle">
+            © 2021 •{" "}
             <a href="https://yudus.dev" className="custom-link">
               <b>Yudus Labs</b>
             </a>{" "}
@@ -27,6 +23,29 @@ export default function HeadSection() {
             <a href="https://coingecko.com" className="custom-link">
               <b>CoinGecko</b>
             </a>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col head-section-about">
+            <div style={{ fontSize: "12px" }}>
+              <br />
+              Hello{" "}
+              <a
+                className="custom-link"
+                href="https://t.me/PolkaWarriors_Global"
+              >
+                <b>Polka Warriors</b>,
+              </a>
+              <br />
+              This tool helps to keep track of tokens built on <b>
+                Substrate
+              </b>{" "}
+              or heavily involved in <b>Polkadot</b> ecosystem
+              <br />
+              It is a curated list with basic due diligence, so please contact
+              us if you find something wrong or missing, thank you !
+              <br />Have a nice day and see y'all on the moon :)
+            </div>
           </div>
         </div>
       </div>

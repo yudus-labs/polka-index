@@ -51,7 +51,7 @@ function fetchTokens(tokens, setState) {
 }
 
 /**
- * Fetch setting and tokens DB from external JSON source, 
+ * Fetch setting and tokens DB from external JSON source,
  * then fetch real market data from CoinGecko
  * @param {Object} state
  * @param {Function} setState
