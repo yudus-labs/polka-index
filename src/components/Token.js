@@ -130,7 +130,7 @@ function MainGrpA(props) {
 
   return (
     <div className="token-item-main-grp">
-      <div className="row">
+      <div className="row mb-3">
         <div className="col-auto pr-0">
           <Logo />
         </div>
