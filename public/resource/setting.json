@@ -3,6 +3,7 @@
     "protocol": "Protocol",
     "platform": "Platform",
     "layer_1": "Layer 1",
+    "layer_2": "Layer 2",
     "relayer": "Relayer",
     "defi": "DeFi",
     "dex": "DEX",
@@ -18,9 +19,15 @@
     "dao": "DAO",
     "privacy": "Privacy",
     "credentials": "Credentials",
+    "idendity": "Idendity",
     "did": "Decentralized ID",
     "cloud": "Cloud Service",
     "pow": "PoW",
+    "energy": "Energy",
+    "game": "Gaming",
+    "oracle": "Oracle",
+    "bridge": "Bridge",
+    "infras": "Infrastructure",
     "others": "Others"
   },
   "db_template": {

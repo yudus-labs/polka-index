@@ -21,9 +21,7 @@
       "w3f": false,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://kusama.network/blog/"
-        ]
+        "links": ["https://kusama.network/blog/"]
       }
     },
 
@@ -34,9 +32,7 @@
       "w3f": false,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://oceanprotocol.com/"
-        ]
+        "links": ["https://oceanprotocol.com/"]
       }
     },
 
@@ -47,9 +43,7 @@
       "w3f": false,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://edgewa.re/"
-        ]
+        "links": ["https://edgewa.re/"]
       }
     },
 
@@ -60,9 +54,7 @@
       "w3f": true,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://darwinia.network/"
-        ]
+        "links": ["https://darwinia.network/"]
       }
     },
 
@@ -73,9 +65,7 @@
       "w3f": false,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://darwinia.network/"
-        ]
+        "links": ["https://darwinia.network/"]
       }
     },
 
@@ -86,9 +76,7 @@
       "w3f": true,
       "details": {
         "desc": "n/a",
-        "links": [
-          "https://sora.org/"
-        ]
+        "links": ["https://sora.org/"]
       }
     },
 
@@ -172,7 +160,7 @@
     {
       "cg_id": "dock",
       "plo": 0,
-      "tags": ["credentials", "did"],
+      "tags": ["credentials", "did", "idendity"],
       "w3f": true,
       "details": {
         "desc": "n/a",
@@ -194,7 +182,15 @@
     {
       "cg_id": "kulupu",
       "plo": 0,
-      "tags": ["layer_1", "relayer", "platform", "protocol", "smart_contract", "dapps", "pow"],
+      "tags": [
+        "layer_1",
+        "relayer",
+        "platform",
+        "protocol",
+        "smart_contract",
+        "dapps",
+        "pow"
+      ],
       "w3f": false,
       "details": {
         "desc": "n/a",
@@ -258,8 +254,41 @@
     },
 
     {
+      "cg_id": "energy-web-token",
+      "plo": 0,
+      "tags": ["energy"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "math",
+      "plo": 0,
+      "tags": ["did", "dao"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "celer-network",
+      "plo": 0,
+      "tags": ["defi", "layer_2", "game"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
       "cg_id": "",
-      "logo": "",
+      "logo": "acala",
       "symbol": "ACA",
       "name": "Acala",
       "price": 0,
@@ -277,13 +306,14 @@
         "supply": 0,
         "total_supply": 0,
         "max_supply": 0,
-        "desc": "Acala description",
-        "links": ["https://link1", "https://link2"]
+        "desc": "n/a",
+        "links": []
       }
     },
+
     {
       "cg_id": "",
-      "logo": "",
+      "logo": "plasm",
       "symbol": "PLM",
       "name": "Plasm",
       "price": 0,
@@ -301,9 +331,310 @@
         "supply": 0,
         "total_supply": 0,
         "max_supply": 0,
-        "desc": "Plasm description",
-        "links": ["https://link1", "https://link2"]
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "kylin",
+      "symbol": "KYL",
+      "name": "Kylin Network",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi", "oracle"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://kylin.network/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/Kylin-Network"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "ares",
+      "symbol": "ARES",
+      "name": "Ares Protocol",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["oracle"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://www.aresprotocol.com/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/aresprotocols"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "kilt",
+      "symbol": "KILT",
+      "name": "KILT Protocol",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["credentials", "did", "idendity"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://www.kilt.io/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/KILTprotocol"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "litentry",
+      "symbol": "LIT",
+      "name": "Litentry",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["credentials", "idendity", "did"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://www.litentry.com/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/litentry"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "bifrost",
+      "symbol": "BNC",
+      "name": "Bifrost Finance",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi", "bridge"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://bifrost.finance/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/bifrost-finance"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "laminar",
+      "symbol": "??",
+      "name": "Laminar",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://laminar.one/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/laminar-protocol"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "zenlink",
+      "symbol": "ZLK",
+      "name": "Zenlink",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://www.zenlink.pro",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/zenlinkpro"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "polkadex",
+      "symbol": "??",
+      "name": "Polkadex",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi", "dex"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://www.polkadex.trade/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/Polkadex-Substrate"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "clover",
+      "symbol": "CLV",
+      "name": "Clover Finance",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["infras", "defi"],
+      "w3f": false,
+      "rank": 0,
+      "details": {
+        "homepage": "https://clover.finance/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/clover-network/"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "equilibrium",
+      "symbol": "EQ",
+      "name": "Equilibrium",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi", "lend"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://equilibrium.io/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/equilibrium-eosdt"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "moonbeam",
+      "symbol": "GLMR",
+      "name": "Moonbeam",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["smart_contract", "dapps", "evm"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://moonbeam.network/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/PureStake/moonbeam"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "centrifuge",
+      "symbol": "RAD",
+      "name": "Centrifuge",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://centrifuge.io/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/centrifuge/"]
       }
     }
+
   ]
 }
