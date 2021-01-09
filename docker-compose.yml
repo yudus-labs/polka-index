@@ -1,0 +1,11 @@
+version: '3'
+services:
+  polka-index:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: duyyudus/polka-index
+    container_name: polka-index
+    restart: always
+    ports:
+      - 8050:80
