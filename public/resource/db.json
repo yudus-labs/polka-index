@@ -73,7 +73,7 @@
       "cg_id": "sora",
       "plo": 0,
       "tags": ["defi", "dex", "amm", "protocol"],
-      "w3f": true,
+      "w3f": false,
       "details": {
         "desc": "n/a",
         "links": ["https://sora.org/"]
@@ -279,6 +279,17 @@
       "cg_id": "celer-network",
       "plo": 0,
       "tags": ["defi", "layer_2", "game"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "sora-validator-token",
+      "plo": 0,
+      "tags": ["defi", "amm", "dex"],
       "w3f": false,
       "details": {
         "desc": "n/a",
@@ -633,6 +644,56 @@
         "max_supply": 0,
         "desc": "n/a",
         "links": ["https://github.com/centrifuge/"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "polkaswap",
+      "symbol": "PSWAP",
+      "name": "Polkaswap",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["defi", "amm", "dex"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://polkaswap.io",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "origintrail",
+      "symbol": "TRAC",
+      "name": "Origin Trail",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["data", "logistic", "supply_chain"],
+      "w3f": false,
+      "rank": 0,
+      "details": {
+        "homepage": "https://origintrail.io",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": []
       }
     }
 

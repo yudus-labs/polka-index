@@ -28,6 +28,9 @@
     "oracle": "Oracle",
     "bridge": "Bridge",
     "infras": "Infrastructure",
+    "logistic": "Logistic",
+    "supply_chain": "Supply Chain",
+    "data": "Data Market",
     "others": "Others"
   },
   "db_template": {
