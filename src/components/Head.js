@@ -27,7 +27,7 @@ export default function HeadSection() {
         </div>
         <div className="row">
           <div className="col head-section-about">
-            <div style={{ fontSize: "12px" }}>
+            <div>
               <br />
               Hello{" "}
               <a
@@ -44,7 +44,8 @@ export default function HeadSection() {
               <br />
               It is a curated list with basic due diligence, so please contact
               us if you find something wrong or missing, thank you !
-              <br />Have a nice day and see y'all on the moon :)
+              <br />
+              Have a nice day and see y'all on the moon :)
             </div>
           </div>
         </div>

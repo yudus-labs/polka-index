@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import ReactGA from "react-ga";
 import { fetchDB, fetchSetting, fetchCoinInfo } from "./common/API";
 
 import HeadSection from "./components/Head";
@@ -7,6 +8,9 @@ import FilterSection from "./components/Filter";
 import TokenSection from "./components/Token";
 
 import "./PolkaIndex.css";
+
+ReactGA.initialize("UA-169204893-5");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function fetchTokens(tokens, setState) {
   const new_tokens = tokens.filter((t) => !t.cg_id);

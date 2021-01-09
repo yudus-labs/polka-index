@@ -197,18 +197,30 @@ function MainGrpB(props) {
   function AllTime() {
     const atl = props.token.atl.toFixed(2);
     const ath = props.token.ath.toFixed(2);
-    const sinceATH = ath > 0 ? ((ath - props.token.price) / ath) * 100 : 0;
+    const sinceATH = -(ath > 0 ? ((ath - props.token.price) / ath) * 100 : 0);
     const sinceATL = atl > 0 ? ((props.token.price - atl) / atl) * 100 : 0;
 
     return (
       <div className="main-grp-all-time">
         <div className="main-grp-since-atl">
-          <b className="main-grp-since-atl-number">{sinceATL.toFixed(2)}</b>%
-          since $<b>{atl}</b> ATL
+          <b
+            className={
+              sinceATL >= 0 ? "main-grp-alltime-up" : "main-grp-alltime-down"
+            }
+          >
+            {sinceATL.toFixed(2)}
+          </b>
+          % since $<b>{atl}</b> ATL
         </div>
         <div className="main-grp-since-ath">
-          <b className="main-grp-since-ath-number">-{sinceATH.toFixed(2)}</b>%
-          since $<b>{ath}</b> ATH
+          <b
+            className={
+              sinceATH >= 0 ? "main-grp-alltime-up" : "main-grp-alltime-down"
+            }
+          >
+            {sinceATH.toFixed(2)}
+          </b>
+          % since $<b>{ath}</b> ATH
         </div>
       </div>
     );

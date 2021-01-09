@@ -16,6 +16,18 @@ code {
     monospace;
 }
 
+.btn-primary {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn-secondary {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .container {
   padding: 0 0 0 0;
   /* margin: 0px; */

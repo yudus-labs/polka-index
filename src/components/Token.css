@@ -104,12 +104,12 @@
 }
 .main-grp-since-atl {
 }
-.main-grp-since-atl-number {
+.main-grp-alltime-up {
   color: var(--secondary-cool-3);
 }
 .main-grp-since-ath {
 }
-.main-grp-since-ath-number {
+.main-grp-alltime-down {
   color: var(--secondary-hot-3);
 }
 

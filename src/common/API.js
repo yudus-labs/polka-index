@@ -1,4 +1,4 @@
-const LOCAL_DEV = true;
+const LOCAL_DEV = false;
 
 const LOCAL_DB_URL = "./resource/db.json";
 const DB_URL =

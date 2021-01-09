@@ -6,21 +6,20 @@
 
 .head-section-title {
   font-family: "Comfortaa";
-  font-size: 35px;
+  font-size: 40px;
   color: var(--secondary-cool-3);
   text-align: center;
   margin-top: 20px;
+  text-shadow: 1px 1px 3px;
 }
 .head-section-line {
   text-align: center;
   height: 25px;
-  /* max-width: 200px; */
   font-size: 30px;
-  /* background-color: var(--primary-bg-dark); */
 }
 .head-section-subtitle {
   font-family: "Source Code Pro", monospace;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--primary-main-3);
   text-align: center;
   margin-top: 0px;
@@ -28,7 +27,7 @@
 }
 .head-section-about {
   font-family: "Source Code Pro", monospace;
-  font-size: 15px;
+  font-size: 12px;
   color: var(--primary-main-3);
   margin-top: 0px;
   margin: 0 20px 15px 20px;
