@@ -94,10 +94,26 @@ function PolkaIndex() {
       curTags: [],
       listed: true,
     },
+    aboutShowed: false,
   });
 
   const updateFilter = (filter) => {
-    setState((s) => ({ tokens: s.tokens, tagMap: s.tagMap, filter: filter }));
+    setState((s) => ({
+      tokens: s.tokens,
+      tagMap: s.tagMap,
+      filter: filter,
+      aboutShowed: s.aboutShowed,
+    }));
+  };
+
+  const toggleAbout = () => {
+    let showed = !state.aboutShowed;
+    setState((s) => ({
+      tokens: s.tokens,
+      tagMap: s.tagMap,
+      filter: s.filter,
+      aboutShowed: showed,
+    }));
   };
 
   useEffect(() => {
@@ -106,11 +122,13 @@ function PolkaIndex() {
 
   return (
     <div className="container polka-index">
-      <HeadSection />
+      <HeadSection aboutShowed={state.aboutShowed} />
       <FilterSection
         filter={state.filter}
         updateFilter={updateFilter}
         tagMap={state.tagMap}
+        toggleAbout={toggleAbout}
+        aboutShowed={state.aboutShowed}
       />
       <TokenSection
         tokens={state.tokens}

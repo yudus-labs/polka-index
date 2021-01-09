@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 
 import "./Head.css";
 
-export default function HeadSection() {
+export default function HeadSection(props) {
+  const aboutShowed = props.aboutShowed;
+
   return (
     <div className="container-fluid head-section">
       <div className="container">
@@ -25,30 +27,33 @@ export default function HeadSection() {
             </a>
           </div>
         </div>
-        <div className="row">
-          <div className="col head-section-about">
-            <div>
-              <br />
-              Hello{" "}
-              <a
-                className="custom-link"
-                href="https://t.me/PolkaWarriors_Global"
-              >
-                <b>Polka Warriors</b>,
-              </a>
-              <br />
-              This tool helps to keep track of tokens built on <b>
-                Substrate
-              </b>{" "}
-              or heavily involved in <b>Polkadot</b> ecosystem
-              <br />
-              It is a curated list with basic due diligence, so please contact
-              us if you find something wrong or missing, thank you !
-              <br />
-              Have a nice day and see y'all on the moon :)
+        {aboutShowed ? (
+          <div className="row">
+            <div className="col head-section-about">
+              <div>
+                <br />
+                Hello{" "}
+                <a
+                  className="custom-link"
+                  href="https://t.me/PolkaWarriors_Global"
+                >
+                  <b>Polka Warriors</b>,
+                </a>
+                <br />
+                This tool helps to keep track of tokens built on{" "}
+                <b>Substrate</b> or heavily involved in <b>Polkadot</b>{" "}
+                ecosystem
+                <br />
+                It is a curated list with basic due diligence, so please contact
+                us if you find something wrong or missing, thank you !
+                <br />
+                Have a nice day and see y'all on the moon :)
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

@@ -287,7 +287,7 @@ function MainGrpD(props) {
           props.toggleDetails();
         }}
       >
-        {props.detailsOn ? "Details ▼" : "Details ▶"}
+        {props.detailsOn ? "Details ▾" : "Details ▸"}
       </div>
     );
   }

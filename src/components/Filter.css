@@ -10,9 +10,9 @@
   color: var(--primary-main-text);
   background: var(--primary-main-1);
   border: none;
-  height: 30px;
-  font-size: 15px;
-  margin: 5px;
+  padding: 1px 3px 1px 3px;
+  font-size: 12px;
+  margin: 3px;
   box-shadow: 1px 1px 2px var(--primary-main-3);
 }
 .tag-btn-on:active,
@@ -22,9 +22,9 @@
   background: var(--primary-light) !important;
   border: none !important;
   border-style: none !important;
-  height: 30px;
-  font-size: 15px;
-  margin: 5px;
+  padding: 1px 3px 1px 3px;
+  font-size: 12px;
+  margin: 3px;
   box-shadow: 1px 1px 2px var(--primary-main-3);
 }
 
@@ -32,9 +32,9 @@
   color: var(--primary-main-text);
   background: var(--primary-bg-dark);
   border: none;
-  height: 30px;
-  font-size: 15px;
-  margin: 5px;
+  padding: 1px 3px 1px 3px;
+  font-size: 12px;
+  margin: 3px;
 }
 .tag-btn-off:active,
 .tag-btn-off:hover,
@@ -44,9 +44,9 @@
   border: none !important;
   border-style: none !important;
   box-shadow: none !important;
-  height: 30px;
-  font-size: 15px;
-  margin: 5px;
+  padding: 1px 3px 1px 3px;
+  font-size: 12px;
+  margin: 3px;
 }
 
 /* On Exchange button */
@@ -92,7 +92,8 @@
 
 /* Toggle all tags button */
 
-.toggle-all-tags-btn {
+.toggle-all-tags-btn,
+.toggle-about-btn {
   color: var(--primary-main-text);
   background: var(--secondary-cool-2);
   border: none;
@@ -102,7 +103,10 @@
 }
 .toggle-all-tags-btn:active,
 .toggle-all-tags-btn:hover,
-.toggle-all-tags-btn:focus {
+.toggle-all-tags-btn:focus,
+.toggle-about-btn:active,
+.toggle-about-btn:hover,
+.toggle-about-btn:focus {
   color: var(--secondary-cool-3) !important;
   background: var(--secondary-cool-1) !important;
   border: none !important;
@@ -110,4 +114,14 @@
   font-size: 15px;
   margin: 5px;
   box-shadow: 1px 1px 3px var(--primary-bg-dark);
+}
+
+.toggle-all-tags-btn {
+  background: var(--primary-main-2);
+}
+.toggle-all-tags-btn:active,
+.toggle-all-tags-btn:hover,
+.toggle-all-tags-btn:focus {
+  color: var(--primary-main-text) !important;
+  background: var(--primary-main-1) !important;
 }

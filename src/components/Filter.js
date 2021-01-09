@@ -26,6 +26,24 @@ ListedBtn.propTypes = {
   filter: PropTypes.object,
 };
 
+function ToggleAboutBtn(props) {
+  return (
+    <div
+      type="button"
+      className="btn btn-primary btn-sm toggle-about-btn"
+      onClick={(e) => {
+        props.toggleAbout();
+      }}
+    >
+      {props.aboutShowed ? "Close About" : "About"}
+    </div>
+  );
+}
+ToggleAboutBtn.propTypes = {
+  aboutShowed: PropTypes.bool,
+  toggleAbout: PropTypes.func,
+};
+
 function ToggleAllTagsBtn(props) {
   return (
     <div
@@ -104,7 +122,7 @@ export default function FilterSection(props) {
     <div className="container-fluid filter-section">
       <div className="row justify-content-between" style={{ margin: 0 }}>
         {/* Tag Items */}
-        <div className="col-9">
+        <div className="col-8">
           <div className="row">
             {defaultTags.map((tagValue) => (
               <TagBtn
@@ -119,10 +137,22 @@ export default function FilterSection(props) {
         </div>
 
         {/* On Exchange toggle */}
-        <div className="col-3">
+        <div className="col-4">
           <div className="row justify-content-end">
-            <ListedBtn toggleListed={toggleListed} filter={props.filter} />
-            <ToggleAllTagsBtn toggleAllTags={toggleAllTags} />
+            <div className="col-auto">
+              <div className="row justify-content-end mb-3">
+                <ToggleAboutBtn
+                  toggleAbout={props.toggleAbout}
+                  aboutShowed={props.aboutShowed}
+                />
+              </div>
+            </div>
+            <div className="col-auto">
+              <div className="row justify-content-end">
+                <ListedBtn toggleListed={toggleListed} filter={props.filter} />
+                <ToggleAllTagsBtn toggleAllTags={toggleAllTags} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -133,4 +163,6 @@ FilterSection.propTypes = {
   filter: PropTypes.object,
   updateFilter: PropTypes.func,
   tagMap: PropTypes.object,
+  toggleAbout: PropTypes.func,
+  aboutShowed: PropTypes.bool,
 };
