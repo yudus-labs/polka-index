@@ -298,6 +298,17 @@
     },
 
     {
+      "cg_id": "darkpaycoin",
+      "plo": 0,
+      "tags": ["payment"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
       "cg_id": "",
       "logo": "acala",
       "symbol": "ACA",
