@@ -32,6 +32,8 @@
     "supply_chain": "Supply Chain",
     "data": "Data Market",
     "payment": "Payment",
+    "social_network": "Social Network",
+    "ipfs": "IPFS",
     "others": "Others"
   },
   "db_template": {

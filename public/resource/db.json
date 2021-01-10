@@ -706,6 +706,31 @@
         "desc": "n/a",
         "links": ["https://github.com/origintrail"]
       }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "subsocial",
+      "symbol": "??",
+      "name": "Subsocial",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["social_network", "ipfs"],
+      "w3f": true,
+      "rank": 0,
+      "details": {
+        "homepage": "https://subsocial.network/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/dappforce"]
+      }
     }
 
   ]
