@@ -267,7 +267,7 @@
     {
       "cg_id": "math",
       "plo": 0,
-      "tags": ["did", "dao"],
+      "tags": ["did", "dao", "idendity"],
       "w3f": false,
       "details": {
         "desc": "n/a",
@@ -301,6 +301,17 @@
       "cg_id": "darkpaycoin",
       "plo": 0,
       "tags": ["payment"],
+      "w3f": false,
+      "details": {
+        "desc": "n/a",
+        "links": []
+      }
+    },
+
+    {
+      "cg_id": "polymath-network",
+      "plo": 0,
+      "tags": ["sto"],
       "w3f": false,
       "details": {
         "desc": "n/a",
@@ -343,7 +354,7 @@
       "atl": 0,
       "ath": 0,
       "plo": 0,
-      "tags": ["smart_contract", "dapps"],
+      "tags": ["smart_contract", "dapps", "layer_2"],
       "w3f": true,
       "rank": 0,
       "details": {
@@ -493,7 +504,7 @@
       "atl": 0,
       "ath": 0,
       "plo": 0,
-      "tags": ["defi"],
+      "tags": ["defi", "synthetic_asset", "margin"],
       "w3f": true,
       "rank": 0,
       "details": {
@@ -618,7 +629,7 @@
       "atl": 0,
       "ath": 0,
       "plo": 0,
-      "tags": ["smart_contract", "dapps", "evm"],
+      "tags": ["smart_contract", "dapps", "evm", "defi"],
       "w3f": true,
       "rank": 0,
       "details": {
@@ -643,7 +654,7 @@
       "atl": 0,
       "ath": 0,
       "plo": 0,
-      "tags": ["defi"],
+      "tags": ["defi", "supply_chain"],
       "w3f": true,
       "rank": 0,
       "details": {
@@ -730,6 +741,31 @@
         "max_supply": 0,
         "desc": "n/a",
         "links": ["https://github.com/dappforce"]
+      }
+    },
+
+    {
+      "cg_id": "",
+      "logo": "datahighway",
+      "symbol": "DHX",
+      "name": "DataHighway",
+      "price": 0,
+      "price_change_24h": 0,
+      "atl": 0,
+      "ath": 0,
+      "plo": 0,
+      "tags": ["iot", "data"],
+      "w3f": false,
+      "rank": 0,
+      "details": {
+        "homepage": "http://www.datahighway.com/",
+        "cap": 0,
+        "diluted_cap": 0,
+        "supply": 0,
+        "total_supply": 0,
+        "max_supply": 0,
+        "desc": "n/a",
+        "links": ["https://github.com/Datahighway-DHX"]
       }
     }
 

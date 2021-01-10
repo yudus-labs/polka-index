@@ -34,6 +34,9 @@
     "payment": "Payment",
     "social_network": "Social Network",
     "ipfs": "IPFS",
+    "synthetic_asset": "Synthetic Asset",
+    "margin": "Margin",
+    "sto": "Security Token",
     "others": "Others"
   },
   "db_template": {
