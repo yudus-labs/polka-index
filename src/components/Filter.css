@@ -125,3 +125,10 @@
   color: var(--primary-main-text) !important;
   background: var(--primary-main-1) !important;
 }
+
+/* Search */
+
+.search-input {
+  margin: 5px;
+  height: 30px;
+}

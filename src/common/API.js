@@ -1,10 +1,10 @@
 const LOCAL_DEV = false;
 
-const LOCAL_DB_URL = "./polkaindex/resource/db.json";
+const LOCAL_DB_URL = "./resource/db.json";
 const DB_URL =
   "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/db.json";
 
-const LOCAL_SETTING_URL = "./polkaindex/resource/setting.json";
+const LOCAL_SETTING_URL = "./resource/setting.json";
 const SETTING_URL =
   "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/setting.json";
 

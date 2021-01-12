@@ -93,6 +93,7 @@ function PolkaIndex() {
     filter: {
       curTags: [],
       listed: true,
+      keyword: "",
     },
     aboutShowed: false,
   });

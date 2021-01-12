@@ -376,6 +376,19 @@ function TokenItem(props) {
     isFilteredOut = true;
   }
 
+  if (props.filter.keyword) {
+    if (
+      !props.token.name
+        .toLowerCase()
+        .includes(props.filter.keyword.toLowerCase()) &&
+      !props.token.symbol
+        .toLowerCase()
+        .includes(props.filter.keyword.toLowerCase())
+    ) {
+      isFilteredOut = true;
+    }
+  }
+
   return isFilteredOut ? (
     ""
   ) : (

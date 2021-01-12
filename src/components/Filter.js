@@ -61,6 +61,26 @@ ToggleAllTagsBtn.propTypes = {
   toggleAllTags: PropTypes.func,
 };
 
+function Search(props) {
+  return (
+    <input
+      type="text"
+      className="form-control search-input"
+      value={props.keyword}
+      onChange={(e) => {
+        const filter = props.filter;
+        filter.keyword = e.target.value;
+        props.updateFilter(filter);
+      }}
+      placeholder="Search"
+    />
+  );
+}
+Search.propTypes = {
+  updateFilter: PropTypes.func,
+  filter: PropTypes.object,
+};
+
 function TagBtn(props) {
   const isOn = () => {
     return props.filter.curTags.includes(props.tagValue);
@@ -151,6 +171,10 @@ export default function FilterSection(props) {
               <div className="row justify-content-end">
                 <ListedBtn toggleListed={toggleListed} filter={props.filter} />
                 <ToggleAllTagsBtn toggleAllTags={toggleAllTags} />
+                <Search
+                  updateFilter={props.updateFilter}
+                  filter={props.filter}
+                />
               </div>
             </div>
           </div>
