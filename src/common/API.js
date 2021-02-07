@@ -8,7 +8,7 @@ const LOCAL_SETTING_URL = "./resource/setting.json";
 const SETTING_URL =
   "https://raw.githubusercontent.com/yudus-labs/polka-index/main/public/resource/setting.json";
 
-  const CG_COINS_URL = "https://api.coingecko.com/api/v3/coins";
+const CG_COINS_URL = "https://api.coingecko.com/api/v3/coins";
 
 async function _fetch(URL) {
   const response = await fetch(URL, {
