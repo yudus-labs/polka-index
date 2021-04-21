@@ -6,8 +6,12 @@ import { fetchDB, fetchSetting, fetchCoinInfo } from "./common/API";
 import HeadSection from "./components/Head";
 import FilterSection from "./components/Filter";
 import TokenSection from "./components/Token";
+import StatsSection from "./components/Stats";
 
 import "./PolkaIndex.css";
+
+const KSM_SYMBOL = "ksm";
+const DOT_SYMBOL = "dot";
 
 ReactGA.initialize("UA-169204893-5");
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -48,6 +52,10 @@ function fetchTokens(tokens, setState) {
           tokens: new_tokens,
           tagMap: s.tagMap,
           filter: s.filter,
+          prices: {
+            ksm: t.symbol === KSM_SYMBOL ? t.price : s.prices.ksm,
+            dot: t.symbol === DOT_SYMBOL ? t.price : s.prices.dot,
+          },
         }));
       });
     }
@@ -73,6 +81,7 @@ function fetchData(state, setState) {
         tokens: s.tokens,
         tagMap: setting.tag_map,
         filter: filter,
+        prices: s.prices,
       };
     });
   });
@@ -95,6 +104,7 @@ function PolkaIndex() {
       listed: true,
       keyword: "",
     },
+    prices: { ksm: 0, dot: 0 },
     aboutShowed: false,
   });
 
@@ -103,6 +113,7 @@ function PolkaIndex() {
       tokens: s.tokens,
       tagMap: s.tagMap,
       filter: filter,
+      prices: s.prices,
       aboutShowed: s.aboutShowed,
     }));
   };
@@ -113,6 +124,7 @@ function PolkaIndex() {
       tokens: s.tokens,
       tagMap: s.tagMap,
       filter: s.filter,
+      prices: s.prices,
       aboutShowed: showed,
     }));
   };
@@ -131,6 +143,7 @@ function PolkaIndex() {
         toggleAbout={toggleAbout}
         aboutShowed={state.aboutShowed}
       />
+      <StatsSection prices={state.prices} />
       <TokenSection
         tokens={state.tokens}
         filter={state.filter}

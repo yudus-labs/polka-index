@@ -1,0 +1,9 @@
+@import "../common/css/common.css";
+
+.stats-section {
+  padding: 15px !important;
+}
+
+.ksm-dot-rate {
+  color: var(--primary-main-3);
+}
