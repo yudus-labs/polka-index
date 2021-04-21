@@ -298,28 +298,6 @@
     },
 
     {
-      "cg_id": "darkpaycoin",
-      "plo": 0,
-      "tags": ["payment"],
-      "w3f": false,
-      "details": {
-        "desc": "n/a",
-        "links": []
-      }
-    },
-
-    {
-      "cg_id": "offshift",
-      "plo": 0,
-      "tags": ["defi", "storage"],
-      "w3f": false,
-      "details": {
-        "desc": "n/a",
-        "links": []
-      }
-    },
-
-    {
       "cg_id": "polymath-network",
       "plo": 0,
       "tags": ["sto"],
