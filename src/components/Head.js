@@ -19,7 +19,7 @@ export default function HeadSection(props) {
             <a href="https://yudus.dev" className="custom-link">
               <b>Yudus Labs</b>
             </a>{" "}
-            • v0.1.0
+            • v0.1.1
             <br />
             Market data by{" "}
             <a href="https://coingecko.com" className="custom-link">
