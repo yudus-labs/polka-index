@@ -7,3 +7,9 @@
 .ksm-dot-rate {
   color: var(--primary-main-3);
 }
+
+.chart {
+  color: var(--primary-main-3);
+  height: 300px;
+  padding-top: 15px;
+}

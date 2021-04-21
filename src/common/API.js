@@ -40,3 +40,8 @@ export async function fetchCoinInfo(coinId) {
   const url = `${CG_COINS_URL}/${coinId}/?tickers=false&&community_data=false&&developer_data=false&&localization=false`;
   return await _fetch(url);
 }
+
+export async function fetchPriceHistory(coinId) {
+  const url = `${CG_COINS_URL}/${coinId}/market_chart?vs_currency=usd&days=max`;
+  return await _fetch(url);
+}
