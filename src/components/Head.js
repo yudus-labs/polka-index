@@ -32,13 +32,7 @@ export default function HeadSection(props) {
             <div className="col head-section-about">
               <div>
                 <br />
-                Hello{" "}
-                <a
-                  className="custom-link"
-                  href="https://t.me/PolkaWarriors_Global"
-                >
-                  <b>Polka Warriors</b>,
-                </a>
+                Hello <b>Para(chain)troopers</b>,
                 <br />
                 This tool helps to keep track of tokens built on{" "}
                 <b>Substrate</b> or heavily involved in <b>Polkadot</b>{" "}
